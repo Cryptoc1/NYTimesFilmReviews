@@ -1,5 +1,6 @@
+var index = 0;
+
 function getInfo(tag,data) {
-  var index = 0;
   var url = "https://api.nytimes.com/svc/movies/v2/reviews/picks.json";
   url += '?' + $.param({
     'api-key': "f40c524ffccf4afd86d8b61f3847250a",
@@ -27,5 +28,29 @@ function getInfo(tag,data) {
     } else {
       document.getElementById(tag).innerHTML = "Data Error - JSON lookup tag incorrect!";
     }
-  }).fail(function(err){  throw err;  });
+  }).fail(function(err){throw err;});
+}
+
+function refresh() {
+  getInfo("title","display_title");
+  getInfo("article","headline");
+  getInfo("author","byline");
+  getInfo("summary","summary_short");
+  getInfo("link","link");
+  getInfo("webview","webview");
+}
+
+function addIndex() {
+  index = index + 1;
+  console.log(index);
+}
+
+function subtractIndex() {
+  if(index == 0) {
+    index = 0;
+    console.log(index);
+  } else {
+    index = index - 1;
+    console.log(index);
+  }
 }

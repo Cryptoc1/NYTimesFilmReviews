@@ -16,10 +16,10 @@
 
             <div class="btn-group buttons">
               <button class="btn btn-mini btn-default">
-                <span class="icon icon-left-open"></span>
+                <span onclick="subtractIndex();refresh();" class="icon icon-left-open"></span>
               </button>
               <button class="btn btn-mini btn-default">
-                <span class="icon icon-right-open"></span> <!--On Click change the value of index in custom.js One way to do this is to have another variable that changes the global variable index-->
+                <span onclick="addIndex();refresh();"class="icon icon-right-open"></span> <!--On Click change the value of index in custom.js One way to do this is to have another variable that changes the global variable index-->
               </button>
             </div>
 
@@ -34,12 +34,7 @@
             <webview id="webview" src="#" class="article"></webview>
 
             <script type="text/javascript">
-              getInfo("title","display_title")
-              getInfo("article","headline")
-              getInfo("author","byline")
-              getInfo("summary","summary_short")
-              getInfo("link","link")
-              getInfo("webview","webview")
+              refresh();
             </script>
           </div>
         </div>
