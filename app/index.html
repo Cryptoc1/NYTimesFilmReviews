@@ -8,42 +8,36 @@
     <link href="css/photon.css" rel="stylesheet" type="text/css"/>
     <link href="css/index.css" rel="stylesheet" type="text/css"/>
   </head>
-  <body>
+  <body style="-webkit-app-region: drag">
     <div class="window">
       <div class="window-content">
         <div class="pane-group">
-          <div class="pane-sm sidebar nav">
-            <ul class="list-group">
-              <li class="list-group-item active">
-                <div class="media-body">
-                  <strong id="menu1">List item 1</strong>
-                  <p id="summary">Lorem ipsum bullshit</p>
-                </div>
-              </li>
-              <li class="list-group-item">
-                <div class="media-body">
-                  <strong>List item 2</strong>
-                  <p>Lorem ipsum bullshit</p>
-                </div>
-              </li>
-            </ul>
-          </div>
           <div class="pane content">
+
+            <div class="btn-group buttons">
+              <button class="btn btn-mini btn-default">
+                <span class="icon icon-left-open"></span>
+              </button>
+              <button class="btn btn-mini btn-default">
+                <span class="icon icon-right-open"></span> <!--On Click change the value of index in custom.js One way to do this is to have another variable that changes the global variable index-->
+              </button>
+            </div>
+
             <h1 class= "main" id="title"></h2>
             <hr/>
             <h4 id="author"></h5>
             <h5 id="article"></h6>
-            <p id="full_summary"></p>
-            <a href="#" id="link"></a>
+            <p id="summary"></p>
+            <p id="link"></p>
+
             <br><br>
-            <webview id="webview" src="#" style="display:inline-flex; width:100%; height:55%"></webview>
+            <webview id="webview" src="#" class="article"></webview>
+
             <script type="text/javascript">
-              getInfo("menu1","display_title")
-              getInfo("summary","summary_short")
               getInfo("title","display_title")
               getInfo("article","headline")
               getInfo("author","byline")
-              getInfo("full_summary","summary_short")
+              getInfo("summary","summary_short")
               getInfo("link","link")
               getInfo("webview","webview")
             </script>
