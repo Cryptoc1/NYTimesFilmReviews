@@ -9,6 +9,15 @@
   padding-bottom: 2%;
 }
 
+.arrows {
+  float:right;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
 hr {
     display: block;
     height: 1px;
