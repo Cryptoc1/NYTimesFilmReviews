@@ -1,12 +1,16 @@
-
-.nav {
-  padding-top:3.5%;
-  width: 30%;
-}
-
 .content {
   padding: 5%;
-  padding-bottom: 2%;
+}
+
+.article {
+  float:center;
+  width:100%;
+  height:55%;
+}
+
+.buttons {
+  float: right;
+  position: relative;
 }
 
 hr {
@@ -17,3 +21,9 @@ hr {
     margin: 1em 0;
     padding: 0;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
