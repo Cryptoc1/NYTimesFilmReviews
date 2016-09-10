@@ -1,9 +1,9 @@
 {
-  "name": "NYT Film Review",
-  "version": "0.0.1",
-  "main": "main.js",
-  "dependencies": {
-    "cheerio": "^0.22.0",
-    "zombie": "^4.2.1"
-  }
+    "name": "Filmr",
+    "version": "0.0.1",
+    "main": "main.js",
+    "dependencies": {
+        "cheerio": "^0.22.0"
+    },
+    "author": "Ben Poile"
 }

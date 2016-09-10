@@ -1,5 +1,3 @@
-var cheerio = require('cheerio')
-
 window.onload = function() {
     var url = "https://api.nytimes.com/svc/movies/v2/reviews/picks.json?api-key=f40c524ffccf4afd86d8b61f3847250a&offset=1",
         webview = document.getElementById('webview'),
