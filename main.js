@@ -6,7 +6,7 @@ let win
 
 function createWindow () {
   // Create the browser window.
-  win = new BrowserWindow({width: 800, height: 800, 'titleBarStyle':'hidden', title: 'Filmr'}) // add 'titleBarStyle': 'hidden' to make title bar go away
+  win = new BrowserWindow({width: 800, height: 800, 'titleBarStyle':'hidden', title: 'NYT Film Review'}) // add 'titleBarStyle': 'hidden' to make title bar go away
 
   // and load the index.html of the app.
   win.loadURL(`file://${__dirname}/app/index.html`)
