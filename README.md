@@ -17,6 +17,10 @@ cd ./Filmr
 
 npm install
 ```
+
+## Ideas
++ Add a bookmark button, and use`localStorage` to save articles for offline reading, or a "to watch" list.
+
 ## License
 
 This project is licensed under the terms of the [MIT license](https://github.com/BenP51/Filmr/blob/master/LICENSE).

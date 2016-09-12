@@ -14,6 +14,15 @@
     text-decoration: none;
 }*/
 
+error {
+    display: none;
+    text-align: center;
+    color: #F44336;
+    opacity: .85;
+    font-weight: 600;
+    font-size: 14pt;
+}
+
 article {
     padding: 20pt;
 }
